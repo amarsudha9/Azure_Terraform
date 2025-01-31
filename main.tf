@@ -1,6 +1,7 @@
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
+subscription_id = "790bae55-6db8-4844-9801-a2b3dd590d1f"
 }
 
 resource "azurerm_resource_group" "example" {
