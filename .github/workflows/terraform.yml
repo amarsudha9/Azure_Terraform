@@ -82,7 +82,7 @@ jobs:
         AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
         AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
         AZURE_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
-        AZURE_SUBSCRIPTION_ID: ${{secrets.AZURE_SUBSCRIPTION_ID}}
+        AZURE_SUBSCRIPTION_ID: "790bae55-6db8-4844-9801-a2b3dd590d1f"
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform Format
@@ -95,7 +95,7 @@ jobs:
         AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
         AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
         AZURE_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
-        AZURE_SUBSCRIPTION_ID: ${{secrets.AZURE_SUBSCRIPTION_ID}}
+        AZURE_SUBSCRIPTION_ID: "790bae55-6db8-4844-9801-a2b3dd590d1f"
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
       # Note: It is recommended to set up a required "strict" status check in your repository for "Terraform Cloud". See the documentation on "strict" required status checks for more information: https://help.github.com/en/github/administering-a-repository/types-of-required-status-checks
@@ -106,4 +106,4 @@ jobs:
         AZURE_CLIENT_ID: ${{secrets.AZURE_CLIENT_ID}}
         AZURE_CLIENT_SECRET: ${{secrets.AZURE_CLIENT_SECRET}}
         AZURE_TENANT_ID: ${{secrets.AZURE_TENANT_ID}}
-        AZURE_SUBSCRIPTION_ID: ${{secrets.AZURE_SUBSCRIPTION_ID}}
+        AZURE_SUBSCRIPTION_ID: "790bae55-6db8-4844-9801-a2b3dd590d1f"
