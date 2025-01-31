@@ -8,3 +8,12 @@ terraform {
     }
   }
 }
+
+#     terraform {
+       backend "azurerm" {
+#        resource_group_name = "Terraform-RG"
+         storage_account_name = "devopsbackend"
+         container_name = "backenddevops"
+         key = ${{secrets.backenddevops}}
+       }
+     }
